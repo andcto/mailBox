@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'inbox'])->name('inbox');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'inbox'])->name('inbox');
 
 Auth::routes();
 
